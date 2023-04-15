@@ -52,7 +52,7 @@ a, .secondary-text, .hero-main-text, button, .empty-image-container{
     color: #E5E7EB;
 }
 
-.call-to-action-container{
+.call-to-action-header-container{
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -80,13 +80,18 @@ a, .secondary-text, .hero-main-text, button, .empty-image-container{
 }
 
 
-#button-no-border{
+#button-no-border, #button-with-border{
     background-color: #3882F6;
     padding: 8px 32px;
     font-weight: bolder;
     border-radius: 10px;
     font-size: 18px;
 }
+
+#button-with-border{
+    border: 2px solid white;
+}
+
 .random-information-container{
     display: flex;
     flex-direction: column;
@@ -157,5 +162,30 @@ a, .secondary-text, .hero-main-text, button, .empty-image-container{
     align-self: end;
     padding-right: 36px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
+}
+
+.call-to-action-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 128px 200px ;
+}
+
+.call-to-action-container > div{
+    display: flex;
+    gap: 10px;
+    background-color: #3882F6;
+    padding: 64px 128px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.call-to-action-text{
+    font-size: 24px;
+    color: #E5E7EB;
+    font-weight: bolder;
 }
